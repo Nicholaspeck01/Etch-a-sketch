@@ -26,3 +26,14 @@ html {
     text-align: center;
     height: auto;
   }
+  
+  .toolKit {
+    display: flex;
+    border: solid red;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .colorPickBox {
+    display: flex;
+  }

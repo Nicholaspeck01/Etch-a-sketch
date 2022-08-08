@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./styles.css" href="https://fonts.googleapis.com/css">
     
 </head>
 <body>
-    <h1>Pixel Drawing!</h1>
-    <div id="container">
-    </div>
-    <div class="toolKit">
-        <div class="colorPickBox">
-            
-            <input type="color" value="" id="color_picker">
-            <label for="color_picker">Pick a colour</label>
+
+    <div id="gamepad">
+        <h1>Etch-A-Sketch</h1>
+        <div class="container" id="container">
+        </div>
+
+        <div id="bottomRow">
+            <div class="userControl" id="colorChoice">
+                <div id="knob1">
+                    <input type="color" id="pen" name="Choose" value="#000">
+                    <div id="colorSelection"><label id="penTitle" for="pen">Color</label></div>
+                </div>
+                
+            </div>
+            <div class="userControl" id="resolution">
+                <label for="size">Resolution</label>
+                <input type="range" id="gridSize" name="size" min="2" max="100" value="8">
+                
+            </div>
+            <div class="userControl" id="resetDiv">
+                <div id="knob2">
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
         </div>
     </div>
 
+    <script src="javaScript.js"></script>
 
-    <script type="text/javascript" src="javaScript.js"></script>
 </body>
-<script>
-
-</script>
-<style>
 
 
-</style>
 </html>
